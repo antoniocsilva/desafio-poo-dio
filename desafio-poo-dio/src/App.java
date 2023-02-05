@@ -7,20 +7,22 @@ import com.github.antoniocsilva.dominio.Mentoria;
 
 public class App {
     public static void main(String[] args) {
-        Curso curso1 = new Curso();
-        curso1.setTitulo("Curso Java");
-        curso1.setDescricao("POO com Java");
-        curso1.setCargaHoraria(8);
+        Curso curso1 = new Curso(8, "Curso Java", "POO com Java");
+        // curso1.setTitulo("Curso Java");
+        // curso1.setDescricao("POO com Java");
+        // curso1.setCargaHoraria(8);
 
         Curso curso2 = new Curso();
         curso2.setTitulo("Curso JS");
         curso2.setDescricao("POO com JS");
         curso2.setCargaHoraria(4);
 
-        Mentoria mentoria = new Mentoria();
-        mentoria.setTitulo("Mentoria java");
-        mentoria.setDescricao("Pilares da POO com Java");
-        mentoria.setData(LocalDate.now());
+        // Mentoria mentoria = new Mentoria();
+        // mentoria.setTitulo("Mentoria java");
+        // mentoria.setDescricao("Pilares da POO com Java");
+        // mentoria.setData(LocalDate.now());
+
+        Mentoria mentoria = new Mentoria("Mentoria java", "Pilares da POO com Java", LocalDate.now());
 
         // System.out.println(curso1);
         // System.out.println(curso2);
